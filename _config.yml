@@ -21,7 +21,7 @@ repository               : "adityatadimeti/adityatadimeti.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "adityatadimeti.png"
+  avatar           : "adityatadimeti.jpg"
   name             : "Aditya Tadimeti"
   pronouns         : # example: "she/her"  
   bio              : "CS at Stanford"
