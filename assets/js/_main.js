@@ -61,5 +61,29 @@ $(document).ready(function(){
     closeOnContentClick: true,
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
+  
+  // Dark mode toggle functionality
+  // First, insert the toggle button in the masthead
+  $('.masthead__inner-wrap').append('<button id="dark-mode-toggle" aria-label="Toggle dark mode"><span class="light-icon">☀️</span><span class="dark-icon">🌙</span></button>');
+  
+  // Check for saved theme preference or use the system preference
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
+  
+  // Set initial theme
+  if (currentTheme === 'dark') {
+    $('html').attr('data-theme', 'dark');
+  }
+  
+  // Toggle theme when button is clicked
+  $('#dark-mode-toggle').on('click', function() {
+    if ($('html').attr('data-theme') !== 'dark') {
+      $('html').attr('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      $('html').removeAttr('data-theme');
+      localStorage.setItem('theme', 'light');
+    }
+  });
 
 });
