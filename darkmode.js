@@ -2,6 +2,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
     
+    // Handle email obfuscation
+    const emailElement = document.querySelector('.obfuscated-email');
+    if (emailElement) {
+        emailElement.addEventListener('click', function(e) {
+            // This is just for display - the href already contains the correct email
+            e.preventDefault();
+            const text = this.getAttribute('href').replace('mailto:', '');
+            this.textContent = text;
+            this.href = 'mailto:' + text;
+            this.classList.remove('obfuscated-email');
+            this.removeEventListener('click', arguments.callee);
+        });
+    }
+    
     // Check for saved preference in localStorage
     if (localStorage.getItem('darkMode') === 'enabled') {
         body.classList.add('dark-mode');
