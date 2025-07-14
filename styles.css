@@ -211,6 +211,18 @@ header h1 {
     margin-bottom: 1.5rem;
 }
 
+/* Content section lists */
+.content-section ul {
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.content-section li {
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    transition: color var(--transition-time);
+}
+
 /* Publications section */
 .publication {
     margin-bottom: 2rem;
