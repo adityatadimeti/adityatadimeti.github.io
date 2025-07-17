@@ -13,7 +13,7 @@
     <meta property="og:url" content="https://adityatadimeti.github.io">
     
     <title>Aditya Tadimeti</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="profile.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="darkmode.js" defer></script>
@@ -38,50 +38,158 @@
                     <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/tadimetiaditya" target="_blank" rel="noopener">@tadimetiaditya</a></li>
                     <li><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?hl=en&user=T_b6OrAAAAAJ&view_op=list_works&gmla=AH8HC4xCB8NF1ch215Ca4YFG-9GbU2m4xettHgbxfAju1xY7YLpCGMat0aym6yA_kIOQ2TKTuKMwHIxfN792IBRM" target="_blank" rel="noopener">Google Scholar</a></li>
                 </ul>
-                
-                <button id="darkModeToggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                </button>
             </div>
         </aside>
 
         <!-- Main Content -->
         <main class="main-content">
-            <header>
-                <h1>Aditya Tadimeti</h1>
-            </header>
+            <!-- Navigation Header -->
+            <nav class="top-nav">
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#about" class="nav-link active">About</a></li>
+                        <li><a href="#cv" class="nav-link">CV</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#writings" class="nav-link">Writings</a></li>
+                    </ul>
+                    <button id="darkModeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
             
-            <section class="content-section">
+            <!-- Content Sections -->
+            <section id="about" class="content-section active">
                 <h2>About me</h2>
                 
-                <p>I’m a master’s student in Computer Science at Stanford University, where I also earned my bachelor’s. My technical interests span two distinct axes: advancing core foundation model technologies, and reinventing traditional domains with agentic systems. </p>
+                <p>I'm a master's student in Computer Science at Stanford University, where I also earned my bachelor's. </p>
                 
-                <p> Currently, I'm a Machine Learning Research Intern at Liquid AI, where I'm working on the efficient training of foundation models.</p>
-                
-                <p> Previously: </p>
-                <ul>
-                    <li> At Stanford, I worked with Prof. Noah Goodman on distilling reasoning traces (ICML 2025), and with Prof. Jure Leskovec on large-scale foundation model pretraining.</li>
-                    <li>At Adobe Firefly, I trained reward models for diffusion alignment.</li>
-                    <li>At Cohere, I worked on language model reasoning.</li>
-                    <li>At Amazon (Supply Chain) and Oracle (OCI), I built high-impact engineering tools.</li>
-                </ul>
+                <p> My main technical interests are in core foundation model technology and reinventing traditional domains with AI. I spent the last few years exploring domains across reasoning, pre-training, ML systems, human alignment, diffusion, and scalable engineering. </p>
 
-                <p> Feel free to reach out: [firstname][lastname]@gmail.com. </p>
+                <p> Currently, I'm at Liquid AI, working on efficiently training foundation models. </p>
+
+                <p>Let's connect! Reach me at [firstname][lastname]@gmail.com.</p>
+
+                <div class="publications-section">
+                    <h3>Publications</h3>
+                    
+                    <div class="publication">
+                        <h4><a href="https://openreview.net/forum?id=uhZLKclfGB&invitationId=ICML.cc/2025/Workshop/LCFM/Submiss" target="_blank" rel="noopener">Simple, Scalable Reasoning via Iterated Summarization</a></h4>
+                        <p class="authors">Vivek Vajipey*, <strong>Aditya Tadimeti*</strong>, Justin Shen*, Ben Prystawski, Michael Y. Li, Noah Goodman</p>
+                        <p class="venue">ICML 2025 Workshop on Long Context Foundation Models</p>
+                        <p class="venue">ICML 2025 Workshop on AI for Math</p>
+                        <p class="note"><em>* Equal contribution</em></p>
+                    </div>
+                </div>
             </section>
 
-            <section class="content-section">
-                <h2>Publications</h2>
+            <section id="cv" class="content-section">
+                <h2>CV <a href="Aditya_Tadimeti_Resume.pdf" target="_blank" rel="noopener" class="cv-download-icon" title="Download CV"><i class="fas fa-download"></i></a></h2>
                 
-                <div class="publication">
-                    <h3><a href="https://openreview.net/forum?id=uhZLKclfGB&invitationId=ICML.cc/2025/Workshop/LCFM/Submiss" target="_blank" rel="noopener">Simple, Scalable Reasoning via Iterated Summarization</a></h3>
-                    <p class="authors">Vivek Vajipey*, <strong>Aditya Tadimeti*</strong>, Justin Shen*, Ben Prystawski, Michael Y. Li, Noah Goodman</p>
-                    <p class="venue">ICML 2025 Workshop on Long Context Foundation Models</p>
-                    <p class="venue">ICML 2025 Workshop on AI for Math</p>
-                    <p class="note"><em>* Equal contribution</em></p>
+                <div class="cv-section">
+                    <div class="cv-preview">
+                        <div class="pdf-container">
+                            <embed src="Aditya_Tadimeti_Resume.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0" type="application/pdf" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h2>Projects</h2>
+                <div class="coming-soon">
+                    <p>Coming soon...</p>
+                </div>
+            </section>
+
+            <section id="writings" class="content-section">
+                <h2>Writings</h2>
+                <div class="coming-soon">
+                    <p>Coming soon...</p>
                 </div>
             </section>
         </main>
     </div>
+    
+    <script>
+        // Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+            
+            // Function to show a specific section
+            function showSection(sectionId, isInitialLoad = false) {
+                // Remove active class from all nav links and sections
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                contentSections.forEach(section => section.classList.remove('active'));
+                
+                // Add active class to the corresponding nav link
+                const activeNavLink = document.querySelector(`a[href="#${sectionId}"]`);
+                if (activeNavLink) {
+                    activeNavLink.classList.add('active');
+                }
+                
+                // Show the target section
+                const targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                    // Reload the PDF preview when revisiting the CV section so it doesn’t disappear
+                    if (sectionId === 'cv') {
+                        const embed = targetSection.querySelector('embed');
+                        if (embed) {
+                            let src = embed.getAttribute('src') || '';
+                            // Remove any existing query parameters or hash fragments
+                            src = src.split('#')[0].split('?')[0];
+                            const viewerParams = '#toolbar=0&navpanes=0&scrollbar=0';
+                            // Append a timestamp to bypass cache and reapply viewer parameters to hide controls
+                            embed.setAttribute('src', `${src}?t=${Date.now()}${viewerParams}`);
+                        }
+                    }
+                }
+                
+                // Update URL hash without triggering page scroll (only if not initial load)
+                if (!isInitialLoad) {
+                    history.replaceState(null, null, `#${sectionId}`);
+                }
+            }
+            
+            // Handle initial page load - check for hash in URL
+            function initializePage() {
+                const hash = window.location.hash.substring(1);
+                const validSections = ['about', 'cv', 'projects', 'writings'];
+                
+                if (hash && validSections.includes(hash)) {
+                    showSection(hash, true); // Pass true for initial load
+                } else {
+                    showSection('about', true); // Default to about if no valid hash
+                }
+            }
+            
+            // Handle navigation clicks
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    showSection(targetId);
+                });
+            });
+            
+            // Handle browser back/forward buttons
+            window.addEventListener('hashchange', function() {
+                const hash = window.location.hash.substring(1);
+                const validSections = ['about', 'cv', 'projects', 'writings'];
+                
+                if (hash && validSections.includes(hash)) {
+                    showSection(hash);
+                } else {
+                    showSection('about');
+                }
+            });
+            
+            // Initialize the page
+            initializePage();
+        });
+    </script>
 </body>
 </html>
