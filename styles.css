@@ -74,14 +74,18 @@ body {
 .profile-image {
     width: 200px;
     margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .profile-image img {
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 5%;
+    object-position: 0% 90%;
     aspect-ratio: 1;
+    transform: scale(1.5) translateX(5%);
+    transform-origin: center center;
 }
 
 .sidebar .name {
