@@ -42,7 +42,7 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: 0% 90%;
-    transform: scale(1.5) translateX(5%);
+    transform: scale(1.5) translateX(5%) translateY(-5%);
     transform-origin: center center;
     display: block;
 }
