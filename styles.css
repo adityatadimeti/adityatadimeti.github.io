@@ -141,6 +141,12 @@ p:last-child {
     margin-bottom: 0.15rem;
 }
 
+.work-item .venue a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 .work-item .note {
     font-size: 0.85rem;
     color: #888;
